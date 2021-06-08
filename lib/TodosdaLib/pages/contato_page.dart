@@ -520,7 +520,7 @@ class ContactRow extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => new _ContactRow();
 }
-
+//Implemente a lista de produtos vendidos
 class _ContactRow extends State<ContactRow> {
   String _selectedValue = "";
   @override
@@ -528,11 +528,9 @@ class _ContactRow extends State<ContactRow> {
     return new Container(
         width: 150.0,
         padding: new EdgeInsets.all(5.0),
-
         child: new Column(children: <Widget>[
           new Text("Produto:",style: TextStyle(fontSize: 22.0, height: 1.5, color: Colors.brown,)),
           new DropdownButton<String>(
-
             items: temp
                 .map((data) => DropdownMenuItem<String>(
               child: Text(data),
@@ -557,7 +555,7 @@ class _ContactRow extends State<ContactRow> {
         ]));
   }
 
-  List _contactTypes = ["Phone (SMS)", "Phone (Whatsapp)", "Email"];
+  List _contactTypes = ["testing", "test2"];
 
   List<DropdownMenuItem<String>> _dropDownMenuItems;
   String _currentContactType;

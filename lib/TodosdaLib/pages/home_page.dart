@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
 
   }
 
+  //Armazena o nome das vendas na lib
   Future<List> draggin() async {
     QuerySnapshot dosd = await FirebaseFirestore.instance.collection("pedido").get();
     dosd.docs.forEach((element) {
